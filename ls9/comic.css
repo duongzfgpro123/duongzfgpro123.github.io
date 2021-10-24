@@ -1,0 +1,33 @@
+.bar{
+    background-color: green;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    background-color: yellow;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+.search_bar{
+    background-color: red;
+    height: 40px;
+    width: 300px;
+    display: flex;
+}
+.search{
+    display: flex;
+
+}
+.bar1{
+    background-color: silver;
+    height: 35px;
+    width: 250px;
+}
+.category{
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+}

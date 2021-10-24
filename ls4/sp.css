@@ -1,0 +1,19 @@
+.container{
+    background-color: gray;
+
+}
+.container .rectangle1{
+    background-color: red;
+    width: 350px;
+    height: 520px;
+    margin: 10px;
+}
+.container .rectangle2{
+    background-color: orangered;
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+}
+.container .item{
+    display: flex;
+}
