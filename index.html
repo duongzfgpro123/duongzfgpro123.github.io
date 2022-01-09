@@ -1,185 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./khotruyen.css">
-    <title>Web Doc Truyen</title>
-</head>
-<body>
-    <header>
-        <div class="heading-bar">
-            <a href="http://127.0.0.1:5500/webdoctruyen/khotruyen.html#"target="_blank"><h1>Kho<span style="color: #F18121;">truyện</span></h1></a>
-            <form action="#" class="search-box">
-                <input type="text" placeholder="Nhập Tên Truyện cần tìm" required>
-                <button type="submit" class="search-icon" style="background-color: #F18121;"></button>
-            </form>
-            <div class="feature-cat">
-                <a href="#">Truyện tranh mới</a>
-                <a href="#"><b>Truyện mới cập nhật</b></a>
-                <a href="#">Truyện full</a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign In</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      form {
+        width: 350px;
+        margin: 0 auto;
+        background: whitesmoke;
+        padding: 30px;
+        border-radius: 10px;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-text{
+          color: red;
+          font-style: italic;
+          /* font-style: italic; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="signInForm">
+        <h1>Sign In</h1>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            name="email"
+          />
+          <div id="emailErr" class="form-text">
+
+          </div>
         </div>
-        <menu>
-            <ul class="menu-ul">
-                <li class="menu-li"><a href="http://127.0.0.1:5500/webdoctruyen/khotruyen.html#"target="_blank">Trang chủ</a></li>
-                <li class="menu-li dropdown">
-                    <a href="#">Thể loại &#8595;</a>
-                    <div class="droplist droplist-fluid-container">
-                        <div class="droplist-fluid">
-                            <a href="https://vi.mangatoro.com/tim-truyen/truong-thanh"target="_blank">Adult</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/action"target="_blank">Action</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/anime"target="_blank"><b>Anime</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/adventure"target="_blank">Adventure</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/chuyen-sinh"target="_blank">Chuyển sinh</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/comedy"target="_blank">Comedy</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/comic"target="_blank"><b>Comic</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/cooking"target="_blank">Cooking</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/co-dai"target="_blank">Cổ Đại</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/doujinshi"target="_blank">Doujinshi</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/drama-103"target="_blank"><b>Drama</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/dam-my"target="_blank">Đam Mỹ</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/ecchi"target="_blank">Ecchi</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/fantasy"target="_blank">Fantasy</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/gender-bender"target="_blank">Gender Bender</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/harem"target="_blank">Harem</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/historical"target="_blank">Historical</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/horror"target="_blank">Horror</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/josei"target="_blank">Josei</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/live-action"target="_blank"><b>Live action</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/manga-112"target="_blank">Manga</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/manhua"target="_blank">Manhua</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/han-quoc-114"target="_blank">Manhwa</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/martial-arts"target="_blank"><b>Martial Arts</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/mature"target="_blank">Mature</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/mecha-117"target="_blank">Mecha</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/mystery"target="_blank">Mystery</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/ngon-tinh"target="_blank">Ngôn Tình</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/one-shot"target="_blank">One Shot</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/psychological"target="_blank">Psychological</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/romance"target="_blank">Romance</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/school-life"target="_blank"><b>School Life</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/sci-fi"target="_blank">Sci-fi</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/seinen"target="_blank">Seinen</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/shoujo"target="_blank">Shoujo</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/shoujo-ai-126"target="_blank">Shoujo Ai</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/shounen-127"target="_blank">Shounen</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/shounen-ai"target="_blank">Shounen Ai</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/slice-of-life"target="_blank">Slice of Life</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/smut"target="_blank">Smut</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/soft-yaoi"target="_blank"><b>Soft Yaoi</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/soft-yuri"target="_blank">Soft Yuri</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/sports"target="_blank">Sports</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/supernatural"target="_blank">Supernatural</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/thieu-nhi"target="_blank"><b>Kids</b></a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/tragedy"target="_blank">Tragedy</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/trinh-tham"target="_blank">Trinh Thám</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/truyen-scan"target="_blank">Truyện Scan</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/truyen-mau"target="_blank">Truyện màu</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/webtoon"target="_blank">Webtoon</a>
-                            <a href="https://vi.mangatoro.com/tim-truyen/xuyen-khong"target="_blank">Xuyên Không</a>
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_blank"><b>Chill Music</b></a>
-                            <div class="fake-img-droplist-fluid-container">
-                                <div class="fake-img-droplist-fluid"></div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-li dropdown">
-                    <a href="#">Phiên Dịch &#8595;</a>
-                    <div class="droplist droplist-normal">
-                        <a href="#">Tiếng Nhật</a>
-                        <a href="#">Tiếng Anh</a>
-                        <a href="#">Tiếng Việt</a>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="confirmPassword"
+          />
+          <div id="passwordErr" class="form-text">
 
-                    </div>
-                </li>
-                <li class="menu-li dropdown">
-                    <a href="#">Xếp Hạng &#8595;</a>
-                    <div class="droplist droplist-normal">
-                        <a href="#">Top All</a>
-                        <a href="#">Top Tháng</a>
-                        <a href="#">Top Tuần</a>
-                        <a href="#">Top Ngày</a>
-                        <a href="#">Truyện Full</a>
-                        <a href="#">Yêu Thích</a>
-                        <a href="#">Mới Cập Nhật</a>
-                        <a href="#">Truyện Mới</a>
-                    </div>
-                </li>
-                <li class="menu-li"><a href="#">Lịch sử</a></li>
-                <li class="menu-li"><a href="#">Truyện con trai</a></li>
-                <li class="menu-li"><a href="#">Truyện con gái</a></li>
-            </ul>
-        </menu>
-    </header>
-
-
-
-    <section class="category" id="moi-cap-nhat">
-        <a href="#"><div class="fake-symbol" style="background-color: #FF2853;"></div><span class="cat-header">Truyện mới cập nhật</span></a>
-        <div class="thumbnail-container">
-            <div class="thumbnail intro-pop-trigger">
-                <a href="#"><div class="fake-img" style="background-color: #2C7ABE;"></div></a>
-                <div class="thumbnail-text">
-                    <a href="#"><h3>Tên Truyện</h3></a>
-                    <a href="#"><p>Chapter 123</p></a>
-                </div>
-                <div class="tag upload-time">
-                    <p>2 giờ trước</p>
-                </div>
-                <div class="thumbnail-intro-box intro-pop">
-                    <div class="arrow-container">
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="thumbnail-intro-container">
-                        <div class="thumbnail-heading-text">
-                            <h2>muda</h2>
-                            <p>Tình trạng: Đang cập nhật</p>
-                            <p>Lượt xem: 123456</p>
-                            <p>Lượt theo dõi: loading...</p>
-                        </div>
-                        <div class="thumbnail-tag-container">
-                            <a href="#" class="tag thumbnail-tag">Lorem</a>
-                            <a href="#" class="tag thumbnail-tag">Lorem</a>
-                            <a href="#" class="tag thumbnail-tag">Lorem</a>
-                            <a href="#" class="tag thumbnail-tag">Lorem, ipsum</a>
-                            <a href="#" class="tag thumbnail-tag">Tên Truyện</a>
-                            <a href="#" class="tag thumbnail-tag">Lorem</a>
-                        </div>
-                        <div class="thumbnail-intro-text">
-                            <p>mô tả</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <section class="quick-link">
-        <a href="#">Truyện tranh</a>
-        <a href="#">Truyện tranh</a>
-        <a href="#">Truyện tranh</a>
-        <a href="#">Đọc truyện tranh</a>
-        <a href="#">Đọc truyện tranh</a>
-        <a href="#">Truyennet</a>
-        <a href="#">Truyện net</a>
-        <a href="#">Truyen net</a>
-    </section>
-    <footer>
-        <div class="footer-container">
-            <p>Copyright © 2020 KhoTruyen - Kho Đọc Truyện Tranh Hay Nhất.</p>
-            <div class="more-link">
-                <a href="#">Xuyên không</a>
-                <a href="#">Chuyển sinh</a>
-                <a href="#">Ngôn tình</a>
-                <a href="#">Đam Mỹ</a>
-                <a href="#">Manhwa</a>
-                <a href="#">Manhua</a>
-            </div>
-        </div>
-    </footer>
+        <div class="mb-3">
+            <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword2"
+              name="confirmPassword"
+            />
+            <div id="confirmPasswordErr" class="form-text">
 
-    <script src="./khotruyen.js"></script>
-</body>
+            </div>
+          </div>
+        <div class="mb-3 form-check">
+          <input
+            onclick="showPassword()"
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Show password</label
+          >
+        </div>
+        <button type="submit" class="btn btn-success">Register</button>
+      </form>
+    </div>
+
+    <script src="./custom.js"></script>
+    <script>
+      let showPassword = () => {
+        let password = document.getElementById("exampleInputPassword1");
+        let cfPassword = document.getElementById("exampleInputPassword2");
+
+        let checkbox = document.getElementById("exampleCheck1");
+        if (checkbox.checked) {
+          password.type = "text";
+          cfPassword.type = "text";
+        } else {
+          password.type = "password";
+          cfPassword.type = "password";
+        }
+      };
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
